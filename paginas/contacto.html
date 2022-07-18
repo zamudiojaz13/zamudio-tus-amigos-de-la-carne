@@ -1,0 +1,71 @@
+<!DOCTYPE html> <!-- identifica el tipo de documento -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <!--se personaliza el tipo de caracteres/cambia dependiendo el pais-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--es para que IE se vea bien-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--tamaño de la pantalla-->
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <!--ICONO-->
+    <link rel="shortcut icon" href="../recursos/favicon.ico" type="image/x-icon">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/estilo.css">
+    <title>contacto - tus amigos de la carne</title>
+</head>
+<body> <!--contenido-->
+    <header>
+        <nav class="header__nav">
+            <img class="header__logo" src="../recursos/favicon.ico" alt="logo">
+            <ul class="header__lista">
+                <li class="header__item"><a href="../index.html">INICIO</a></li>
+                <li class="header__item"><a href="contacto.html">CONTACTO</a><!-- etiqueta para enlazar--></li>
+                <li class="header__item"><a href="hacienda.html">HACIENDA</a></li>
+                <li class="header__item"><a href="productos.html">PRODUCTOS</a></li>
+                <li class="header__item"><a href="sobre-nosotros.html">SOBRE NOSOTROS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!--todo lo que no sea header o footer-->
+    <section class="main__titulo">
+        <h1 class="main__titulo--principal">CONTACTO</h1> <!--solo se puede usar una vez-->
+    </section>
+    <section class="formulario">
+        <form class="completar" method="post">
+            <div>
+                <Label>Nombre</Label>  <!--muestra la palabra antes del input-->
+                <input class="espacio">
+            </div>
+            <div>
+                <label>Email</label>
+                <input class="espacio" type="Email"> 
+            </div>
+            <div>
+                <label>Teléfono</label>
+                <input class="espacio" type="number">
+            </div>
+            <div>
+                <label>Comentario</label>
+                <textarea class="espacio"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar formulario"/>
+            </div>
+        </form>
+        <ul class="datos">
+            <li>11-4196-0616</li>
+            <li>Email</li>
+            <li>Ganadera San Roque</li>
+        </ul>
+    <!-- </section>
+    <!-- mapa google maps --
+    <section class="mapa">-->
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.89886123818846!2d-58.62832044243232!3d-34.66063853860369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc7448171b929%3A0xfcab02fd2dd177b0!2sGanadera%20San%20Roque!5e0!3m2!1ses-419!2sar!4v1655583585118!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!--</section> -->
+    </main>
+    <footer class="footer__derechos"> <!--pie de pagina-->
+        <p>TODOS LOS DERECHOS RESERVADOS</p>
+    </footer>
+</body>
+</html>
