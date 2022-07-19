@@ -16,7 +16,7 @@ header{
 /*header*/
 .header__nav{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 .header__logo{
     display: flex;
@@ -128,6 +128,7 @@ header{
     grid-area: mapa;
     background-position: center;
     background-size: contain;
+    width: 100%;
 }
 
 .espacio{
