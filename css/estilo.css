@@ -17,6 +17,7 @@ header{
 .header__nav{
     display: flex;
     flex-wrap:wrap;
+    background-image: linear-gradient( to top, rgb(41, 78, 17), rgb(46, 112, 46));
 }
 .header__logo{
     display: flex;
@@ -40,6 +41,11 @@ header{
 .header__item a{
     color: white;
     text-decoration: none;
+}
+
+.header__item:hover{
+    transform: scale(1.15, 1.15);
+    transition: all 0,5s;
 }
 
 /*main*/
@@ -82,7 +88,7 @@ header{
     display: flex;
     font-family: 'Yellowtail', cursive;
     font-size:36px ;
-    background-color:rgb(41, 78, 17);
+    background-image: linear-gradient( to top, rgb(41, 78, 17), rgb(46, 112, 46));
     color: white;
     justify-content: center;
 }
