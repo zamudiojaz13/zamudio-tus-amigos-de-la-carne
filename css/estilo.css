@@ -65,7 +65,7 @@ header{
 
 .fondo__principal{
     display: grid;
-    width: 100vw;
+    width: 100%;
     height: 165vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 7fr 1fr 6fr;
@@ -107,6 +107,7 @@ header{
 
 /*main contacto*/
 
+
 .formulario{
     display: grid;
     width: 100vw;
@@ -142,14 +143,6 @@ header{
     height: 30px;
     margin:0,5rem;
 }
-
-/*.mapa{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    width: 100vw;
-    margin: 30px;
-}*/
 
 /* hacienda*/
 
@@ -322,7 +315,7 @@ header{
     .formulario{
         display: grid;
         width: 100vw;
-        height: 100vh;
+        height:auto;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 3fr 3fr;
         grid-template-areas: "datos "
