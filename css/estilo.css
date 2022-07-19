@@ -108,7 +108,7 @@ header{
 /*main contacto*/
 
 .main__contacto{
-    background-image: linear-gradient( to top, rgb(46, 112, 46), rgb(87, 137, 87));
+    background-image: linear-gradient( to top, rgb(46, 112, 46), rgb(70, 121, 70));
 }
 .formulario{
     display: grid;
