@@ -19,6 +19,11 @@ header{
     flex-wrap:wrap;
     background-image: linear-gradient( to top, rgb(41, 78, 17), rgb(46, 112, 46));
 }
+
+.nav-color{
+    background-image: linear-gradient( to top, rgb(41, 78, 17), rgb(46, 112, 46 ));
+}
+
 .header__logo{
     display: flex;
     flex-wrap: wrap;
@@ -67,11 +72,11 @@ header{
     display: grid;
     width: 100%;
     height: 165vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 7fr 1fr 6fr;
-    grid-template-areas: "fondo fondo fondo fondo"
-                        " slogan slogan slogan slogan"
-                        "tuno tuno tdos tdos";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 7fr 1fr 2fr;
+    grid-template-areas: "fondo fondo"
+                        " slogan slogan"
+                        "carousel carousel";
     background-color: rgb(41, 78, 17);
 }
 
@@ -86,24 +91,18 @@ header{
 .slogan{
     grid-area: slogan;
     display: flex;
+    flex-wrap: wrap;
     font-family: 'Yellowtail', cursive;
-    font-size:36px ;
     background-image: linear-gradient( to top, rgb(41, 78, 17), rgb(46, 112, 46));
     color: white;
     justify-content: center;
+    align-items: center;
 }
 
-.tuno{
-    grid-area: tuno;
-    background-image: url("../recursos/trabajador-1.jpg");
+.carousel{
+    grid-area: carousel;
     background-position: center;
 }
-
-.tdos{
-    grid-area: tdos;
-    background-image: url("../recursos/trabajador-2.jpg");
-    background-position: center;
-} 
 
 /*main contacto*/
 
@@ -112,39 +111,43 @@ header{
 }
 .formulario{
     display: grid;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 50%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "datos completar"
-                        " mapa none";
-}
-
-.datos{
-    grid-area: datos;
-    background-position: start;
-    font-size: 40px;
+    grid-template-areas: "datos completar";
 }
 
 .completar{
     grid-area: completar;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    width: 75%;
 }
 
+.datos{
+    grid-area: datos;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;;
+    color: white;
+    font-size: 40px;
+}
+
+
 .mapa{
-    grid-area: mapa;
-    background-position: center;
-    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
 }
+
 
 .espacio{
     width: 50%;
     height: 30px;
     margin:0,5rem;
 }
+
 
 /* hacienda*/
 
@@ -290,13 +293,12 @@ header{
 /*modificacion index*/
 
     .fondo__principal{
-        height: auto;
+        height: 100%;
         grid-template-columns:1fr;
-        grid-template-rows:7fr 1fr 5fr 5fr;
+        grid-template-rows:2fr 1fr 1fr;
         grid-template-areas: "fondo"
                         " slogan"
-                        "tuno"
-                        "tdos";
+                        "carousel";
     }
 
     .slogan{
@@ -378,25 +380,15 @@ header{
 
     .fondo__principal{
         grid-template-columns: 1fr;
-        grid-template-rows: 10fr 1fr 5fr 5fr;
+        grid-template-rows: 7fr 1fr 1fr;
         grid-template-areas: "fondo"
                             "slogan"
-                            "tuno"
-                            "tdos";
+                            "carousel";
     }
 
     .slogan{
         font-size:25px;
         text-align: center;
-    }
-
-    .tuno{
-        background-size:cover;
-
-    }
-
-    .tdos{
-        background-size:cover;
     }
 
 /*contacto*/
