@@ -54,12 +54,33 @@
     <section class="main__titulo">
         <h1 class="main__titulo--principal animate__animated animate__pulse">PRODUCTOS</h1> <!--solo se puede usar una vez-->
     </section>
-    <section class="imagenes">
-        <div class="uno"></div>
-        <div class="dos"></div>
-        <div class="tres"></div>
-        <div class="cuatro"></div>
+    <section class="row justify-content-center">
+    <div id="carouselExampleControls" class="carousel slide col-auto" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../recursos/producto.jpg" class="d-block w-70" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../recursos/productoo.jpg" class="d-block w-70" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../recursos/producto-3.jpg" class="d-block w-70" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="../recursos/prod-4.jpg" class="d-block w-70" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     </section>
+    </div>
     </main>
     <footer class="footer__derechos"> <!--pie de pagina-->
         <p>TODOS LOS DERECHOS RESERVADOS</p>
