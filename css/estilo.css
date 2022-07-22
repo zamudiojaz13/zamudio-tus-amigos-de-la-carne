@@ -141,6 +141,9 @@ header{
     width: 100%;
 }
 
+.boton{
+    background-color: white;
+}
 
 .espacio{
     width: 50%;
@@ -186,55 +189,20 @@ header{
 }
 
 /*main productos*/
-
-.imagenes{
-    display:grid;
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-    /*padding:auto;*/
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
-    grid-template-areas: "uno tres"
-                        "dos cuatro";
-    row-gap: 15px;
-    column-gap: 15px;
-}
-
-.uno{
-    grid-area: uno;
-    background-image: url("../recursos/producto.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.dos{
-    grid-area: dos;
-    background-image: url("../recursos/productoo.jpg");
-    background-position: center;
-    background-size:contain;
-    background-repeat:no-repeat;
-}
-
-.tres{
-    grid-area: tres;
-    background-image: url("../recursos/producto-3.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.cuatro{
-    grid-area: cuatro;
-    background-image: url("../recursos/prod-4.jpg");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+.car{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 /*main sobre nosotros*/
 
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .descripcion{
     text-align: center;
 }
@@ -311,7 +279,7 @@ header{
     }
 
     .tdos{
-        background-size:cover ;
+        background-size:cover;
     }
 
 /*contacto*/
