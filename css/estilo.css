@@ -10,19 +10,20 @@ body{
 
 header{
     background-color: rgb(41, 78, 17); 
-    position: sticky;
     top: 0px;
 }
+
+
 /*header*/
-.header__nav{
-    display:flex;
-    flex-wrap:wrap;
-    background-image: linear-gradient( to top, rgb(41, 78, 17), rgb(46, 112, 46));
-}
 
 .nav-color{
     background-image: linear-gradient( to top, rgb(41, 78, 17), rgb(46, 112, 46 ));
 }
+
+.nav-link{
+    color: white;
+}
+
 
 .header__logo{
     display: flex;
@@ -73,10 +74,10 @@ header{
     width: 100%;
     height: 165vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 7fr 1fr 2fr;
+    grid-template-rows: 3fr 1fr 2fr;
     grid-template-areas: "fondo fondo"
-                        " slogan slogan"
-                        "carousel carousel";
+                        "slogan slogan"
+                        "car none";
     background-color: rgb(41, 78, 17);
 }
 
@@ -99,9 +100,12 @@ header{
     align-items: center;
 }
 
-.carousel{
-    grid-area: carousel;
-    background-position: center;
+.car{
+    grid-area: car;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /*main contacto*/
@@ -109,19 +113,9 @@ header{
 .main__contacto{
     background-image: linear-gradient( to top, rgb(46, 112, 46), rgb(70, 121, 70));
 }
-.formulario{
-    display: grid;
-    width: 100%;
-    height: 50%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "datos completar";
-}
 
-.completar{
-    grid-area: completar;
-    display: flex;
-    flex-direction: column;
-    width: 75%;
+.btn{
+    background-color: aliceblue;
 }
 
 .datos{
@@ -134,7 +128,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
+    width: 100%;
 }
 
 .boton{
@@ -185,11 +179,6 @@ header{
 }
 
 /*main productos*/
-.car{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 /*main sobre nosotros*/
@@ -198,6 +187,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .descripcion{
     text-align: center;
@@ -365,16 +355,9 @@ header{
 
 /*contacto*/
 
-    .formulario{
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 3fr 3fr;
-        grid-template-areas: "datos "
-                            " mapa "
-                            "completar";
-    } 
+    .mapa{
+        height: 50%;
+    }
 
     .datos{
         font-size: 25px;
