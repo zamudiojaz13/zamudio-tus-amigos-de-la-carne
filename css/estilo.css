@@ -15,7 +15,7 @@ header{
 }
 /*header*/
 .header__nav{
-    display: flex;
+    display:flex;
     flex-wrap:wrap;
     background-image: linear-gradient( to top, rgb(41, 78, 17), rgb(46, 112, 46));
 }
@@ -125,10 +125,6 @@ header{
 }
 
 .datos{
-    grid-area: datos;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;;
     color: white;
     font-size: 40px;
 }
@@ -138,7 +134,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 100%;
+    width: 50%;
 }
 
 .boton{
@@ -190,11 +186,11 @@ header{
 
 /*main productos*/
 .car{
-    display: flex;
+    display:flex;
     flex-direction: column;
-    flex-wrap: nowrap;
     align-items: center;
 }
+
 
 /*main sobre nosotros*/
 
@@ -285,18 +281,26 @@ header{
 /*contacto*/
 
     .formulario{
-        display: grid;
+        display: flex;
+        flex-direction: column;
         width: 100vw;
         height:auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 3fr 3fr;
-        grid-template-areas: "datos "
-                            " mapa "
-                            "completar";
     } 
 
     .datos{
+        flex-direction: column;
+        align-items: flex-start;
         font-size: 25px;
+    }
+
+    .completar{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .mapa{
+        flex-direction: column;
+        align-items: center;
     }
 
 /*modificacion hacienda*/
@@ -416,3 +420,4 @@ header{
     } 
 
 }
+
