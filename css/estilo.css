@@ -57,11 +57,16 @@ header{
 /*main*/
 
 .main__titulo{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     text-align: center;
     background-color:rgb(41, 78, 17);
     font-family: 'Lato', sans-serif;
     color: white
 }
+
 
 .main__titulo--principal{
     font-family: 'Cardo', serif;
@@ -73,11 +78,11 @@ header{
     display: grid;
     width: 100%;
     height: 165vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr 1fr 2fr;
-    grid-template-areas: "fondo fondo"
-                        "slogan slogan"
-                        "car none";
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr 1fr 1fr;
+    grid-template-areas: "fondo"
+                        "slogan"
+                        "car";
     background-color: rgb(41, 78, 17);
 }
 
@@ -103,9 +108,10 @@ header{
 .car{
     grid-area: car;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    align-items:flex-end;
 }
 
 /*main contacto*/
@@ -188,23 +194,6 @@ header{
     flex-direction: column;
     align-items: center;
     width: 100%;
-}
-.descripcion{
-    text-align: center;
-}
-
-.descripcion__explicacion{
-    padding: 30px;
-}
-.descripcion__icono{
-    width: 30px;
-}
-
-.main__contacto{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:column;
-    width:100vw;
 }
 
 .main__titulo{
@@ -305,32 +294,9 @@ header{
 
 /*modificacion productos*/
 
-    .imagenes{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        height: 165vh;
-        grid-template-areas: "uno"
-                            "tres"
-                            "dos"
-                            "cuatro";
-        row-gap: 3px;
+    .img{
+        height: 100%;
     }
-
-    .uno{
-        background-size: cover;
-    }
-
-    .dos{
-        background-size: cover;
-    }
-
-    .tres{
-        background-size: cover;
-    }
-
-    .cuatro{
-        background-size: cover;
-    } 
 
 }
 
@@ -345,7 +311,7 @@ header{
         grid-template-rows: 7fr 1fr 1fr;
         grid-template-areas: "fondo"
                             "slogan"
-                            "carousel";
+                            "car";
     }
 
     .slogan{
