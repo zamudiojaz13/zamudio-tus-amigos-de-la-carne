@@ -217,20 +217,7 @@ header{
 @media (min-width: 320px) and (max-width: 575px) {
 
 /*modificacion header*/
-    .header__lista{
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .header__nav{
-        flex-direction: column;
-    }
-
-    .header__logo{
-        width: 50px;
-        height: 50px;
-        margin: 10px 0 10px 10px;
-    }
 
 
 /*modificacion index*/
@@ -258,12 +245,10 @@ header{
     }
 
 /*contacto*/
-
-    .formulario{
+    .form{
         display: flex;
-        flex-direction: column;
-        width: 100vw;
-        height:auto;
+        flex-wrap: wrap;
+        flex-direction:column;
     } 
 
     .datos{
@@ -284,13 +269,6 @@ header{
 
 /*modificacion hacienda*/
 
-    .hacienda__img{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "huno"
-                            "hdos"
-                            "htres";
-    }
 
 /*modificacion productos*/
 
