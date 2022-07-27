@@ -299,9 +299,12 @@ header{
 
 /*contacto*/
 
-    .mapa{
-        height: 50%;
-    }
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+} 
+
 
     .datos{
         font-size: 25px;
