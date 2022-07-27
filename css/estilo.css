@@ -8,10 +8,6 @@ body{
     font-family: 'Hammersmith One', sans-serif;
 }
 
-header{
-    background-color: rgb(41, 78, 17); 
-    top: 0px;
-}
 
 
 /*header*/
@@ -24,20 +20,6 @@ header{
     color: white;
 }
 
-
-.header__logo{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.header__lista{
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: end;
-    flex-grow:  3;
-}
 .header__item{
     display: flex;
     flex-wrap: wrap;
@@ -137,52 +119,9 @@ header{
     width: 100%;
 }
 
-.boton{
-    background-color: white;
-}
-
-.espacio{
-    width: 50%;
-    height: 30px;
-    margin:0,5rem;
-}
-
 
 /* hacienda*/
 
-.hacienda__img{
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "huno hdos"
-                        "huno htres";
-}
-
-.huno{
-    grid-area:huno;
-    background-image: url("../recursos/hacienda.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.hdos{
-    grid-area:hdos;
-    background-image: url("../recursos/hacienda-2.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.htres{
-    grid-area:htres;
-    background-image: url("../recursos/hacienda-3.jpeg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 /*main productos*/
 
@@ -228,21 +167,14 @@ header{
         grid-template-rows:2fr 1fr 1fr;
         grid-template-areas: "fondo"
                         " slogan"
-                        "carousel";
+                        "car";
     }
 
     .slogan{
         font-size:15px ;
         text-align: center;
     }
-    
-    .tuno{
-        background-size:cover;
-    }
 
-    .tdos{
-        background-size:cover;
-    }
 
 /*contacto*/
     .form{
@@ -257,10 +189,6 @@ header{
         font-size: 25px;
     }
 
-    .completar{
-        flex-direction: column;
-        align-items: flex-end;
-    }
 
     .mapa{
         flex-direction: column;
@@ -313,41 +241,8 @@ header{
 
 /*modificacion hacienda*/
 
-    .hacienda__img{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "huno"
-                            "hdos"
-                            "htres";
-    }
 
 /*modificacion productos*/
-
-    .imagenes{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        height: 165vh;
-        grid-template-areas: "uno"
-                            "tres"
-                            "dos"
-                            "cuatro";
-    } 
-
-    .uno{       
-        background-size:cover;
-    }
-
-    .dos{
-        background-size: cover;
-    }
-
-    .tres{
-        background-size: cover;
-    }
-
-    .cuatro{
-        background-size: cover;
-    } 
 
 }
 
