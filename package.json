@@ -1,0 +1,25 @@
+{
+  "name": "tus-amigos-de-la-carne",
+  "version": "1.0.0",
+  "description": "<h1> Tus amigos de la carne</h1> <p> este sitio es sobre un matarife abastecedor </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamudiojaz13/TusAmigosDeLaCarne.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zamudiojaz13/TusAmigosDeLaCarne/issues"
+  },
+  "homepage": "https://github.com/zamudiojaz13/TusAmigosDeLaCarne#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

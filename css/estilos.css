@@ -1,0 +1,140 @@
+/*color*/
+.nav-color {
+  background-image: linear-gradient(to top, #294e11, #2e702e); }
+  .nav-color .nav-link {
+    color: white; }
+  .nav-color .header__item {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px; }
+    .nav-color .header__item:hover {
+      transform: scale(1.15, 1.15);
+      transition: all 0,5s; }
+    .nav-color .header__item a {
+      color: white;
+      text-decoration: none; }
+
+.main__titulo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  background-color: #294e11;
+  font-family: 'Lato', sans-serif;
+  color: white; }
+  .main__titulo--principal {
+    font-family: 'Cardo', serif; }
+
+/*main index*/
+.fondo__principal {
+  display: grid;
+  width: 100%;
+  height: 165vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7fr 1fr 1fr;
+  grid-template-areas: "fondo" "slogan" "car";
+  background-color: #294e11; }
+  .fondo__principal .fondo {
+    grid-area: fondo;
+    background-image: url("../recursos/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .fondo__principal .slogan {
+    grid-area: slogan;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Yellowtail', cursive;
+    background-image: linear-gradient(to top, #294e11, #2e702e);
+    color: white;
+    justify-content: center;
+    align-items: center; }
+  .fondo__principal .car {
+    grid-area: car;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end; }
+
+/*footer*/
+.footer__derechos {
+  background-color: #294e11;
+  color: white;
+  font-family: 'PT Sans Narrow', sans-serif;
+  padding: 16px; }
+
+/*main contacto*/
+.main__contacto {
+  background-image: linear-gradient(to top, #2e702e, #467946); }
+  .main__contacto .btn {
+    background-color: aliceblue; }
+  .main__contacto .datos {
+    color: white;
+    font-size: 40px; }
+  .main__contacto .mapa {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Hammersmith One', sans-serif; }
+
+/*main sobre nosotros*/
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; }
+
+/*media querie celular*/
+@media (min-width: 320px) and (max-width: 575px) {
+  /*modificacion index*/
+  .fondo__principal {
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: "fondo" " slogan" "car"; }
+    .fondo__principal .slogan {
+      font-size: 15px;
+      text-align: center; }
+  /*contacto*/
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    .form .datos {
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 25px; }
+    .form .mapa {
+      flex-direction: column;
+      align-items: center; }
+  /*modificacion productos*/
+  .img {
+    height: 100%; } }
+
+/*media querie tablet*/
+@media (min-width: 576px) and (max-width: 992px) {
+  /*modificacion index*/
+  .fondo__principal {
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr 1fr 1fr;
+    grid-template-areas: "fondo" "slogan" "car"; }
+    .fondo__principal .slogan {
+      font-size: 25px;
+      text-align: center; }
+  /*contacto*/
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    .form .datos {
+      font-size: 25px; } }

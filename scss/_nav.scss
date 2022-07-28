@@ -1,0 +1,23 @@
+.nav-color{
+    background-image: linear-gradient( to top, $color-principal, $color-secundario);
+    .nav-link{
+        color: white;
+    }
+    .header__item{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+    
+        &:hover{
+            transform: scale(1.15, 1.15);
+            transition: all 0,5s;
+        }
+    
+    
+        & a{
+            color: white;
+            text-decoration: none;
+        }
+    
+    }
+}

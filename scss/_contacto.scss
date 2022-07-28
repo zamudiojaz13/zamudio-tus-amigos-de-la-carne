@@ -1,0 +1,21 @@
+/*main contacto*/
+
+.main__contacto{
+    background-image: linear-gradient( to top, $color-secundario, rgb(70, 121, 70));
+    .btn{
+        background-color: aliceblue;
+    }
+    
+    .datos{
+        color: white;
+        font-size: 40px;
+    }
+    
+    
+    .mapa{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+}

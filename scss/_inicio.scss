@@ -1,0 +1,38 @@
+/*main index*/
+
+.fondo__principal{
+    display: grid;
+    width: 100%;
+    height: 165vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7fr 1fr 1fr;
+    grid-template-areas: "fondo"
+                        "slogan"
+                        "car";
+    background-color: $color-principal;
+    .fondo {
+        grid-area: fondo;
+        background-image:url("../recursos/fondo.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+    .slogan{
+        grid-area: slogan;
+        display: flex;
+        flex-wrap: wrap;
+        font-family: 'Yellowtail', cursive;
+        background-image: linear-gradient( to top, $color-principal, $color-secundario);
+        color: white;
+        justify-content: center;
+        align-items: center;
+    }
+    .car{
+        grid-area: car;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items:flex-end;
+    }
+}
