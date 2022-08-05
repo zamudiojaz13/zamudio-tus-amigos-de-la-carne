@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*color*/
 .nav-color {
   background-image: linear-gradient(to top, #294e11, #2e702e); }
@@ -42,9 +43,9 @@
     background-repeat: no-repeat;
     background-size: cover; }
   .fondo__principal .slogan {
-    grid-area: slogan;
     display: flex;
     flex-wrap: wrap;
+    grid-area: slogan;
     font-family: 'Yellowtail', cursive;
     background-image: linear-gradient(to top, #294e11, #2e702e);
     color: white;
@@ -53,10 +54,10 @@
   .fondo__principal .car {
     grid-area: car;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: flex-end; }
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around; }
 
 /*footer*/
 .footer__derechos {
@@ -64,6 +65,12 @@
   color: white;
   font-family: 'PT Sans Narrow', sans-serif;
   padding: 16px; }
+
+.tamaño-h1 {
+  font-size: 3rem; }
+
+.tamaño-h3 {
+  font-size: 1rem; }
 
 /*main contacto*/
 .main__contacto {
