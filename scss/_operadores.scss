@@ -1,0 +1,16 @@
+$titulos:(
+    h1:3rem,
+    h3:1rem
+);
+
+@each $tit, $size in $titulos {
+    .tamaño-#{$tit} {
+        font-size: #{$size};
+    }
+    
+}
+
+@mixin flex($flex-direction,$align) {
+    flex-direction: $flex-direction;
+    align-items: $align;
+}

@@ -18,9 +18,9 @@
         background-size:cover;
     }
     .slogan{
-        grid-area: slogan;
         display: flex;
         flex-wrap: wrap;
+        grid-area: slogan;
         font-family: 'Yellowtail', cursive;
         background-image: linear-gradient( to top, $color-principal, $color-secundario);
         color: white;
@@ -30,9 +30,9 @@
     .car{
         grid-area: car;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+        flex-direction: row;
+        align-items: flex-end;
         justify-content: space-around;
-        align-items:flex-end;
     }
 }
