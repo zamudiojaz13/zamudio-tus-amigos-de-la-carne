@@ -1,5 +1,4 @@
 /*media querie celular*/
-
 @media (min-width: 320px) and (max-width: 575px) {
 
     /*modificacion index*/
@@ -34,21 +33,25 @@
     } 
     
     /*modificacion productos*/
-    
         .img{
             height: 100%;
+        }
+    /*modificacion hacienda*/
+        .espacio2{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 500px;
         }
     
     }
     
     /*media querie tablet*/
-    
     @media (min-width: 576px) and (max-width: 992px) {
-    
     /*modificacion index*/
     
         .fondo__principal{
-            grid-template-columns: 1fr;
+            grid-template-columns:1fr;
             grid-template-rows: 7fr 1fr 1fr;
             grid-template-areas: "fondo"
                                 "slogan"
@@ -60,7 +63,6 @@
         }
     
     /*contacto*/
-    
     .form{
         display: flex;
         flex-wrap: wrap;
