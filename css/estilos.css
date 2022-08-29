@@ -57,8 +57,13 @@
     flex-wrap: wrap;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: space-around;
-    background-color: #294e11; }
+    justify-content: space-around; }
+
+.informacion {
+  padding: 10px;
+  color: white;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif; }
 
 /*footer*/
 .footer__derechos {
@@ -66,6 +71,9 @@
   color: white;
   font-family: 'PT Sans Narrow', sans-serif;
   padding: 16px; }
+  .footer__derechos .footer__img {
+    width: 50px;
+    margin-bottom: 10px; }
 
 .tamaño-h1 {
   font-size: 3rem; }
@@ -75,12 +83,13 @@
 
 /*main contacto*/
 .main__contacto {
-  background-image: linear-gradient(to top, #2e702e, #467946); }
+  background-image: linear-gradient(to top, #294e11, #467946); }
   .main__contacto .btn {
     background-color: aliceblue; }
   .main__contacto .datos {
     color: white;
-    font-size: 40px; }
+    font-size: 25px;
+    list-style: none; }
   .main__contacto .mapa {
     display: flex;
     flex-direction: column;
